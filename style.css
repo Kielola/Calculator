@@ -1,0 +1,111 @@
+/* *, *::before, *::after{
+    box-sizing: border-box;
+    font-family: serif;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+}
+.grid{
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+}
+.grid>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #FFFFFF; 
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.grid>button:hover{
+    background-color: #a9a9a9;
+
+}
+.span-two{
+    grid-column: span 2le;
+    color: #adf802;
+    background-color: rgba(139, 0, 139, 0.8);
+}
+.output{
+    position: relative;
+    bottom: -63px;
+    grid-column: 1/ -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous{
+    color: rgba(255, 255, 255,0.75);
+    font-size: 1.5rem;
+}
+.output .current{
+    color: white;
+    font-size: 2.5rem;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(51, 84, 84);
+}
+.calculator{
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 10px;
+}
+.screen{
+    width: 224px;
+    font-size: 40px;
+    overflow: hidden;
+    text-align: end;
+    background-color: rgb(51, 192, 51);
+    padding: 4px;
+}
+.buttons{
+    width: 232px;
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    background-color: rgb(131, 129, 129);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 4px;
+}
+button:hover{
+    background-color: rgb(111, 110, 110);
+}
+button:active{
+    background-color: rgb(232, 232, 232);
+}
+#equals{
+    background-color: rgb(218, 2, 2);
+}
+#equals:hover{
+    background-color: rgb(198, 1, 1);
+}
+#clear{
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+   font-size: 30px;
+}
+#clear:hover{
+    background-color: rgb(252,  201, 17);  
+}
